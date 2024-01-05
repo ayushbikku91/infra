@@ -9,7 +9,7 @@ sudo dnf group list --available
 sudo dnf group install "Server with GUI"
 sudo systemctl set-default graphical
 sudo systemctl get-default
-reboot
+reboot.
 
 
 
