@@ -32,10 +32,21 @@ echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee "/etc/sudoers.d/dont-prompt-
 It creates a file called /etc/sudoers.d/dont-prompt-<YOUR USERNAME>-for-sudo-password with the following contents:
 
 <YOUR USERNAME> ALL=(ALL:ALL) NOPASSWD: ALL
+
+
 This works because Debian's and Ubuntu's default /etc/sudoers file has this line
 
 #includedir /etc/sudoers.d
+
 which makes it process files in the /etc/sudoers.d/ directory. If the command above didn't work, check that no one has removed that line from your /etc/sudoers file.
+
+## Install Graphical On Minimal Ubuntu Linux Server 22.04.03
+
+sudo apt update
+
+sudo apt install ubuntu-desktop -y
+
+# Another Way to do this. 
 
 sudo apt install tasksel
 
