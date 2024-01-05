@@ -19,5 +19,20 @@ sudo systemctl get-default
 reboot.
 
 
+# Setup Graphical in Ubuntu/Debian OS
+
+sudo apt install tasksel
+
+sudo tasksel --list-tasks
+
+sudo tasksel install ubuntu-desktop    or   tasksel install desktop
+
+sudo systemctl get-default
+
+sudo systemctl set-default graphical.target
+
+
+
+
 
 
